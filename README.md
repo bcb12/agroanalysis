@@ -2,31 +2,31 @@
 Repositorio para el trabajo de la asignatura de minería de datos
 
 El proyecto se distribuye en los 4 directorios principales, uno por cada fase:
-    - extraction
-    - load
-    - serve
-    - transform
+- extraction
+- load
+- serve
+- transform
 
 Dentro de extraction, load y serve se encuentran:
-    - requirements.txt: para instalar los componentes necesarios para cada parte
-    - docker-compose.yml: para construir el contenedor docker
-    - Dockerfile: para construir el contenedor docker
-    - app (Directorio): directorio "raíz" del módulo
+- requirements.txt: para instalar los componentes necesarios para cada parte
+- docker-compose.yml: para construir el contenedor docker
+- Dockerfile: para construir el contenedor docker
+- app (Directorio): directorio "raíz" del módulo
 
 Dentro de cada directorio app se encuentra el directorio src, con el código
 del módulo:
-    - main.py: contiene los endpoint de FastAPI
-    - extraction/load/serve .py: código principal del módulo
-    - config.py: con la configuración de la conexión a la DB
-    - database.ini: con los datos de conexión a la DB
+- main.py: contiene los endpoint de FastAPI
+- extraction/load/serve .py: código principal del módulo
+- config.py: con la configuración de la conexión a la DB
+- database.ini: con los datos de conexión a la DB
 
 Dentro de extraction y load existe el directorio data, con los ficheros
 adicionales que sean necesarios:
-    - extraction:
-        - raw_data: con los subdirectorios que alojan los ficheros extraídos de
+- extraction:
+    - raw_data: con los subdirectorios que alojan los ficheros extraídos de
                     de las fuentes de datos
-    - load:
-        - data: con un fichero .csv que contiene un diccionario para sustutuir
+- load:
+    - data: con un fichero .csv que contiene un diccionario para sustutuir
                 nombres de productos en los datastes
 
 Dentro de serve existe el directorio templates, el cual alojará las plantillas
