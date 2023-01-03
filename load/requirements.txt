@@ -1,0 +1,8 @@
+BeautifulSoup4
+grequests
+pandas
+psycopg2-binary
+sqlalchemy
+multipledispatch
+fastapi
+uvicorn
