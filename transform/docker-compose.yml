@@ -1,0 +1,28 @@
+version: "3.8"
+
+services: 
+  postgres:
+    image: postgres
+    command:
+      - "postgres"
+      - "-c"
+      - "listen_addresses=172.21.0.3"
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - DATABASE_HOST=172.21.0.3
+      - DATABASE_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=agro
+    networks:
+      mainNetwork:
+        ipv4_address: 172.21.0.3
+
+networks:
+  mainNetwork:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.21.0.0/24
+      
