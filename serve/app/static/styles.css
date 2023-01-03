@@ -1,0 +1,59 @@
+.mynavbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.myli {
+    float: left;
+}
+
+.myli .mya, .mydropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.myli .mya:hover, .mydropdown:hover .mydropbtn {
+    color: white;
+    text-decoration: none;
+    background-color: #007bff;
+}
+
+.myli.mydropdown {
+    display: inline-block;
+}
+
+.mydropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.mydropdown-content .mya {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.mydropdown-content .mya:hover {
+    background-color: #f1f1f1;
+    color: #007bff;
+}
+
+.mydropdown:hover .mydropdown-content {
+    display: block;
+}
+
+#datatable {
+    min-width: 900px;
+}

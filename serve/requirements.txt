@@ -1,0 +1,10 @@
+requests
+pandas
+pydantic
+psycopg2-binary
+openpyxl
+jinja2
+fastapi
+python-multipart
+uvicorn
+sqlalchemy

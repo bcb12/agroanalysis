@@ -1,0 +1,16 @@
+services:
+  serve:
+    build: .
+    ports:
+      - "88:88"
+    volumes:
+      - ./app:/app
+    working_dir: /app
+    networks:
+      mainNetwork:
+        ipv4_address: 172.18.0.12
+
+networks:
+  mainNetwork:
+    name: nginxproxymanager_default
+    external: true
